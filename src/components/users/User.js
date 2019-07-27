@@ -24,7 +24,6 @@ const User = ({ match, user, loading, getUser, getUserRepos, repos }) => {
 		public_repos,
 		public_gists,
 		company,
-		//organizations_url,
 		hireable,
 	} = user;
 
@@ -88,6 +87,7 @@ const User = ({ match, user, loading, getUser, getUserRepos, repos }) => {
 				<div className="badge badge-light">Public Repos: {public_repos}</div>
 				<div className="badge badge-dark">Public Gists: {public_gists}</div>
 			</div>
+			<Repos repos={repos} />
 		</Fragment>
 	);
 };
