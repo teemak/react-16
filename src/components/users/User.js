@@ -28,7 +28,7 @@ export class User extends Component {
 			public_repos,
 			public_gists,
 			company,
-			organizations_url,
+			//organizations_url,
 			hireable,
 		} = this.props.user;
 
@@ -78,16 +78,16 @@ export class User extends Component {
 							</li>
 							<li>
 								{company && (
-									<fragment>
+									<Fragment>
 										<strong>Company: </strong> {company}
-									</fragment>
+									</Fragment>
 								)}
 							</li>
 							<li>
 								{blog && (
-									<fragment>
+									<Fragment>
 										<strong>Website: </strong> {blog}
-									</fragment>
+									</Fragment>
 								)}
 							</li>
 						</ul>
